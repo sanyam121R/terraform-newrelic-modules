@@ -1,3 +1,3 @@
 variable "dashboards_data" {
-  type = list(any)
+  type = map(any)
 }
