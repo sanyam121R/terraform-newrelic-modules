@@ -1,5 +1,5 @@
 resource "newrelic_synthetics_monitor" "monitor" {
-  for_each         = var.config_data
+  for_each         = var.config_data_synthetics
 
   name             = each.value.name
   status           = each.value.status
