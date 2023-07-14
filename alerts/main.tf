@@ -7,6 +7,7 @@ resource "newrelic_alert_policy" "yan" {
 # USE THIS RESOURCE TO CREATE AND MANAGE NRQL ALERT CONDITIONS IN NEW RELIC.
 
 resource "newrelic_nrql_alert_condition" "sanyam" {
+
   policy_id = newrelic_alert_policy.yan.id
 
   for_each    = var.alert_conditions
